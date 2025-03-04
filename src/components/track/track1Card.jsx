@@ -68,7 +68,7 @@ export default function Track1Card() {
               <Image src={track4} alt="track1" />
               <CardTextWrapper>
                 <TitleSide>
-                  <KMove>일본취업반 K-Move 트랙 Ⅱ (예정)</KMove>
+                  <KMove>일본취업반 K-Move 트랙 Ⅱ </KMove>
                   <CardText>
                     2025년 일본취업 클라우드 기반
                     <br />
@@ -114,7 +114,7 @@ export default function Track1Card() {
               <Linear src={linear} alt="linear" />
               <CardTextWrapper>
                 <TitleSide>
-                  <KMove2>일본취업반 K-Move 트랙 Ⅰ (예정)</KMove2>
+                  <KMove2>일본취업반 K-Move 트랙 Ⅰ </KMove2>
                   <CardText2>
                     2025년 일본취업 산업융합
                     <br />

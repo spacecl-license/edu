@@ -54,8 +54,12 @@ export default function MainSlider() {
             <SlideImg src={slide1} />=
             <SlideText>
               <SlideTextFirst>
-                <BigText>일본어 무료 클래스 오픈</BigText>
-                <SmallText>2025년 K-Move 일본취업연수과정 연계</SmallText>
+                <BigText>일본취업 연수과정 연수생 모집 중</BigText>
+                <SmallText>
+                  2025년 K-Move 일본취업 클라우드 웹개발자 과정(트랙Ⅱ) 2025년
+                  <br />
+                  K-Move 일본취업 IT·SW 전문가 양성과정(트랙Ⅰ)
+                </SmallText>
                 <ButtonWrapper>
                   <Link to="/track">
                     <MainSliderButton src={mainSlideButton1} />
@@ -85,9 +89,11 @@ export default function MainSlider() {
             <SlideImg src={slide2} />
             <SlideText>
               <SlideTextFirst>
-                <BigText>일본어 무료 클래스 오픈</BigText>
+                <BigText>일본취업 연수과정 연수생 모집 중</BigText>
                 <SmallText>
-                  2025년 K-Move 일본취업연수과정 연계 IT•SW•ICT
+                  2025년 K-Move 일본취업 클라우드 웹개발자 과정(트랙Ⅱ) 2025년
+                  <br />
+                  K-Move 일본취업 IT·SW 전문가 양성과정(트랙Ⅰ)
                 </SmallText>
                 <ButtonWrapper>
                   <Link to="/track">
@@ -118,7 +124,9 @@ export default function MainSlider() {
             <SlideImg src={slide3} />
             <SlideText>
               <SlideTextFirst>
-                <BigText>국내외 최신 트렌드에 맞춘 IT 핵심기술을 반영</BigText>
+                <BigText>
+                  국내, 일본 최신 트렌드에 맞춘 IT 핵심 기술을 반영한 연수과정
+                </BigText>
                 <SmallText>
                   기업형 글로벌 아카데미 스페이스씨엘
                   <br />

@@ -59,7 +59,7 @@ export default function FloatingBanner() {
             <div>HOME</div>
           </BannerText>
         </Link>
-        <Link to="/track1">
+        <Link to="/track">
           <BannerText>
             <img
               src={banner2}

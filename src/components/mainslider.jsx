@@ -57,7 +57,7 @@ export default function MainSlider() {
                 <BigText>일본어 무료 클래스 오픈</BigText>
                 <SmallText>2025년 K-Move 일본취업연수과정 연계</SmallText>
                 <ButtonWrapper>
-                  <Link to="/track1">
+                  <Link to="/track">
                     <MainSliderButton src={mainSlideButton1} />
                   </Link>
                   <MainSliderButton src={mainSlideButton2} onClick={kakao} />
@@ -90,7 +90,7 @@ export default function MainSlider() {
                   2025년 K-Move 일본취업연수과정 연계 IT•SW•ICT
                 </SmallText>
                 <ButtonWrapper>
-                  <Link to="/track1">
+                  <Link to="/track">
                     <MainSliderButton src={mainSlideButton1} />
                   </Link>
                   <MainSliderButton src={mainSlideButton2} onClick={kakao} />
@@ -125,7 +125,7 @@ export default function MainSlider() {
                   맞춤형 교육으로 글로벌 취업의 첫걸음!
                 </SmallText>
                 <ButtonWrapper>
-                  <Link to="/track1">
+                  <Link to="/track">
                     <MainSliderButton src={mainSlideButton1} />
                   </Link>
                   <MainSliderButton src={mainSlideButton2} onClick={kakao} />

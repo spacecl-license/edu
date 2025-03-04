@@ -24,7 +24,7 @@ export default function MainTrack() {
                 2025년 일본취업 IT•SW•ICT 과정
               </CardText>
             </TitleSide>
-            <Link to="/track1">
+            <Link to="/track">
               <Detail>
                 상세보기
                 <img src={vector} alt="vector icon" />
@@ -76,7 +76,7 @@ export default function MainTrack() {
               </TrackText4>
             </Explain>
           </CardTextWrapper>
-          <Link to="/track1">
+          <Link to="/track">
             <Detail>상세보기</Detail>
           </Link>
         </Card> */}

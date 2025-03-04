@@ -49,7 +49,7 @@ export default function MainSliderMobile() {
               <SmallText>2025년 K-Move 일본취업연수과정 연계</SmallText>
               <span>연수생 모집중</span>
               <ButtonWrapper>
-                <Link to="/track1">
+                <Link to="/track">
                   <MainSliderButton src={mainSlideButton1} />
                 </Link>
                 <MainSliderButton
@@ -88,7 +88,7 @@ export default function MainSliderMobile() {
               </SmallText>
               <span>연수생 모집중</span>
               <ButtonWrapper>
-                <Link to="/track1">
+                <Link to="/track">
                   <MainSliderButton src={mainSlideButton1} />
                 </Link>
                 <MainSliderButton
@@ -132,7 +132,7 @@ export default function MainSliderMobile() {
                 맞춤형 교육으로 글로벌 취업의 첫걸음!
               </SmallText>
               <ButtonWrapper>
-                <Link to="/track1">
+                <Link to="/track">
                   <MainSliderButton src={mainSlideButton1} />
                 </Link>
                 <MainSliderButton

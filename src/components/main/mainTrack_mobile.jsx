@@ -25,7 +25,7 @@ export default function MainTrackMobile() {
             <JapaneseTitle>수강생 모집 중</JapaneseTitle>
             <JapaneseText>일본어 초중급 CLASS 3월 오픈</JapaneseText>
           </TrackJapanese>
-          <Link to="/track1">
+          <Link to="/track">
             <Detail>
               상세보기
               <img src={vector} alt="vector icon" />

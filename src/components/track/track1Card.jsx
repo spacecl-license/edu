@@ -17,7 +17,7 @@ export default function Track1Card() {
       </KMoveItWrap>
 
       {/* 카드 */}
-      <ProgramWrap>
+      {/* <ProgramWrap>
         <div>
           <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
           <div>
@@ -59,7 +59,7 @@ export default function Track1Card() {
             </ProgramExplain>
           </div>
         </div>
-      </ProgramWrap>
+      </ProgramWrap> */}
       <ProgramWrap>
         <div>
           <TrackIntroTitle>프로그램 소개</TrackIntroTitle>

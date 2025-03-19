@@ -68,12 +68,14 @@ export default function MainSlider() {
                 </ButtonWrapper>
               </SlideTextFirst>
               <SlideTextJapanese>
-                <JapaneseTitle>일본어사전클래스 개설</JapaneseTitle>
+                <JapaneseTitle>K-Move스쿨 일본취업반</JapaneseTitle>
                 <JapaneseDivider />
                 <div>
                   <SlideTextJapaneseText>
-                    · 일본어 초중급 CLASS 3월 개강
-                    <SlideTextSmall>(주3회 2주 클래스)</SlideTextSmall>
+                    · IT Programming+일본어
+                  </SlideTextJapaneseText>
+                  <SlideTextJapaneseText>
+                    · 채용약정기업 추천매칭
                   </SlideTextJapaneseText>
                   <SlideTextJapaneseText>
                     · 전액 무료 / 교육생 모집중
@@ -102,12 +104,14 @@ export default function MainSlider() {
                 </ButtonWrapper>
               </SlideTextFirst>
               <SlideTextJapanese>
-                <JapaneseTitle>일본어사전클래스 개설</JapaneseTitle>
+                <JapaneseTitle>K-Move스쿨 일본취업반</JapaneseTitle>
                 <JapaneseDivider />
                 <div>
                   <SlideTextJapaneseText>
-                    · 일본어 초중급 CLASS 3월 개강
-                    <SlideTextSmall>(주3회 2주 클래스)</SlideTextSmall>
+                    · IT Programming+일본어
+                  </SlideTextJapaneseText>
+                  <SlideTextJapaneseText>
+                    · 채용약정기업 추천매칭
                   </SlideTextJapaneseText>
                   <SlideTextJapaneseText>
                     · 전액 무료 / 교육생 모집중
@@ -139,12 +143,14 @@ export default function MainSlider() {
                 </ButtonWrapper>
               </SlideTextFirst>
               <SlideTextJapanese>
-                <JapaneseTitle>일본어사전클래스 개설</JapaneseTitle>
+                <JapaneseTitle>K-Move스쿨 일본취업반</JapaneseTitle>
                 <JapaneseDivider />
                 <div>
                   <SlideTextJapaneseText>
-                    · 일본어 초중급 CLASS 3월 개강
-                    <SlideTextSmall>(주3회 2주 클래스)</SlideTextSmall>
+                    · IT Programming+일본어
+                  </SlideTextJapaneseText>
+                  <SlideTextJapaneseText>
+                    · 채용약정기업 추천매칭
                   </SlideTextJapaneseText>
                   <SlideTextJapaneseText>
                     · 전액 무료 / 교육생 모집중
@@ -209,7 +215,7 @@ const SlideTextJapanese = styled.div`
 `;
 
 const JapaneseTitle = styled.div`
-  font-size: 34px;
+  font-size: 32px;
   font-family: Pretendard, sans-serif;
   font-weight: 600;
   color: #a7e3f9;

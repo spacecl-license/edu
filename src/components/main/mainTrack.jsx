@@ -17,7 +17,7 @@ export default function MainTrack() {
           <Image src={track1} alt="track1" />
           <CardTextWrapper>
             <TitleSide>
-              <KMove>일본어 클래스(3월)</KMove>
+              {/* <KMove>일본어 클래스(3월)</KMove> */}
               <CardText>
                 K-Move(Track)
                 <br />
@@ -33,7 +33,7 @@ export default function MainTrack() {
           </CardTextWrapper>
           <TrackJapanese>
             <JapaneseTitle>수강생 모집중</JapaneseTitle>
-            <JapaneseText>일본어 초급 CLASS 3월 오픈</JapaneseText>
+            <JapaneseText>일본어 초급 CLASS 4월, 6월 오픈</JapaneseText>
           </TrackJapanese>
         </Card>
         {/* <Card>
@@ -173,9 +173,11 @@ const KMove = styled.span`
 
 const CardText = styled.span`
   color: white;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: 2rem;
   font-family: Pretendard, sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 700;
   line-height: 150%;
   white-space: nowrap;
   text-align: left;

@@ -16,7 +16,7 @@ export default function Track1CardMobile() {
         <KMoveIt>K-Move 일본 IT기업 취업 국비 무료 교육</KMoveIt>
       </KMoveItWrap>
       {/* 카드 */}
-      <ProgramWrap>
+      {/* <ProgramWrap>
         <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
         <div>
           <Card2>
@@ -60,7 +60,7 @@ export default function Track1CardMobile() {
           <ApplyButton onClick={onOpen}>지원하기</ApplyButton>
           <OpenModalMobile isOpen={isOpen} onClose={onClose} />
         </ProgramExplain>
-      </ProgramWrap>
+      </ProgramWrap> */}
 
       <ProgramWrap>
         <TrackIntroTitle>프로그램 소개</TrackIntroTitle>

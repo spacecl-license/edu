@@ -132,7 +132,7 @@ export default function Form({ onClose }) {
             placeholder="선택해주세요"
             sx={{ border: 'none', backgroundColor: 'rgb(248, 249, 250)' }}
           >
-            <option>일본어 클래스(3월 개강)</option>
+            {/* <option>일본어 클래스(3월 개강)</option> */}
             <option>
               일본취업 클라우드 기반 풀스택 웹개발자 양성과정(4월 개강)
             </option>

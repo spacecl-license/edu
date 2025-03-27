@@ -23,7 +23,7 @@ export default function MainTrackMobile() {
           </CardTextWrapper>
           <TrackJapanese>
             <JapaneseTitle>수강생 모집 중</JapaneseTitle>
-            <JapaneseText>일본어 초급 CLASS 4월, 6월 오픈</JapaneseText>
+            <JapaneseText>K-Move 스쿨 4월, 6월 오픈</JapaneseText>
           </TrackJapanese>
           <Link to="/track">
             <Detail>

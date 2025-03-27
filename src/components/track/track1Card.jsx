@@ -142,7 +142,7 @@ export default function Track1Card() {
                     한국소프트웨어 인재개발원(가산디지털단지역 도보 5분 내)
                   </PeriodText>
                   <PeriodText>100% 국비지원 무료교육</PeriodText>
-                  <PeriodText>20명 선착순 지원</PeriodText>
+                  <PeriodText>15명 선착순 지원</PeriodText>
                 </TextSide>
               </div>
               <ApplyButton onClick={onOpen}>지원하기</ApplyButton>

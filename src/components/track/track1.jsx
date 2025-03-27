@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import special from '../../assets/images/special.svg';
+import special from '../../assets/images/special.png';
 import Track1Card from './track1Card';
 import Track1Intro from './track1Intro';
 import Track1Time from './track1Time';

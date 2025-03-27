@@ -157,7 +157,7 @@ export default function Track1CardMobile() {
             </div>
             <div>
               <Period>연수인원</Period>
-              <PeriodText>20명 선착순 지원</PeriodText>
+              <PeriodText>15명 선착순 지원</PeriodText>
             </div>
           </Title>
           <ApplyButton onClick={onOpen}>지원하기</ApplyButton>
@@ -188,7 +188,7 @@ const Title = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 3200px;
+  height: 2150px;
 `;
 
 const ImageWrapper = styled.div`

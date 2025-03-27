@@ -13,21 +13,25 @@ export default function SpecialLineup() {
       </SpecialTitle>
       <SpecialText>
         <div>
-          전 연수과정 100% 국비지원
+          전 연수과정 100% 국비지원과정
           <br />
           (자부담금 없음)
         </div>
-        <div>연수장려금 지급(월 최대 20만원)</div>
-        <div>전 교재비 무상제공</div>
-        <div>우수 수료생 시상</div>
+        <div>연수장려금 지급(월 10~20만원)</div>
         <div>
-          자격증 검정료 : 정보처리기사, JLPT N2
+          (연수기관-연수생 주소 간 편도거리 30Km 기준에 따라
           <br />
-          시험료 지원(2회 한정)
+          연수개시 익월부터 10~20만원 지급)
         </div>
         <div>
-          팀별 스터디 비용지원 :<br />
-          월별 팀당 소정의 스터디 활성화 비용지원
+          매달 훈련수당금 지급
+          <br />
+          (국민취업지원제도 활용, 연수장려금과 중복불가)
+        </div>
+        <div>1유형 : 최대 300만원(50만원 X 6개월)</div>
+        <div>2유형 : 월 최대 28만 4천원(X 최장 6개월)</div>
+        <div>
+          자격증 검정료 : 정보처리기사, JLPT N2등 직무연계 시험료 지원(1회 한정)
         </div>
       </SpecialText>
 
@@ -36,21 +40,10 @@ export default function SpecialLineup() {
         취업특전
       </SpecialTitle>
       <SpecialText>
-        <div>
-          수료예정자 협약기업 채용설명회 및 면접을
-          <br />
-          통한 ‘우선채용 전형’ : 80% 인원 채용약정
-        </div>
-        <div>
-          사전 채용설명회를 통한 개별 취업처
-          <br />
-          매칭기회 부여
-        </div>
-        <div>
-          상시 온라인 면접(ZOOM, SKYPE),
-          <br />
-          교육센터 방문 면접 진행
-        </div>
+        <div>수료예정자 협약기업 채용설명회 및 면접을 통한 우선채용 전형</div>
+        <div>사전 채용설명회를 통한 개별 취업처 매칭기회 부여</div>
+        <div>개별 인터뷰실습, 모의면접 컨설팅</div>
+        <div>상시 온라인 면접(ZOOM, 구글미트), 교육센터 방문면접 진행</div>
       </SpecialText>
 
       <SpecialTitle>
@@ -77,27 +70,19 @@ export default function SpecialLineup() {
       </SpecialTitle>
       <SpecialText>
         <div>
-          취업 근속기간에 따른 노동부 훈련장려금
+          취업 근속기간에 따른 해외정착지원금
           <br />
           지급<span>(총 500만원)</span>
           <br />
           <span>(1개월 250만원, 6개월 100만원, 12개월 150만원)</span>
         </div>
         <div>
-          매달 훈련수당금 지급
+          (※ 2025년 가구원 전체 건강보험료 합산액 <span>(629,110)</span>
           <br />
-          (국민취업지원제도 활용)
+          이하만 신청가능)
         </div>
-        <div>
-          1유형
-          <br />- 최대 300만원 (50만원 X 6개월) 지원
-        </div>
-        <div>
-          2유형
-          <br />- 월 최대 28만4천원 (X 최장 6개월) 지원
-        </div>
-        <div>강의실 사용 지원 : 야간 및 주말오픈</div>
-        <div>학습 및 진로상담을 위한 상시 상담 채널운용</div>
+        <div>강의실 사용 지원 : 야간 및 주말 오픈</div>
+        <div>학습 및 진로상담을 위한 상시 상담채널 운용</div>
       </SpecialText>
     </Wrapper>
   );

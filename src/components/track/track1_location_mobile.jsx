@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import location from '../../assets/images/map.png';
+import location from '../../assets/images/map2.png';
 import location4 from '../../assets/images/software_icon.svg';
 import locationBackground from '../../assets/images/locationBackground.svg';
 import rectangle from '../../assets/images/rectangle.svg';
@@ -30,15 +30,17 @@ export default function Track1LocationMobile() {
         </div>
         <div>
           <AddressText>
-            서울시 금천구 가산동 459-14
+            서울 금천구 가산동 60-26
             <br />
-            현대타워가산 DK 512호, 513호 (주)스페이스씨엘
+            가산퍼블릭 제B동 2015호 2016호
+            <br />
+            (주)스페이스씨엘
           </AddressText>
           <PhoneNumber>02) 6958-8204</PhoneNumber>
           <SubwayText>
             1호선 또는 7호선 가산디지털단지역
             <br />
-            8번 출구 도보 5분
+            6번 출구 도보 10분
           </SubwayText>
         </div>
       </BottomTextWrap>
@@ -117,6 +119,7 @@ const Phone = styled.span`
   font-family: Pretendard, sans-serif;
   font-weight: 600;
   text-align: left;
+  margin-top: 24px;
 `;
 
 const Subway = styled.span`

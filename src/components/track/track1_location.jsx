@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import location3 from '../../assets/images/map.png';
+import location3 from '../../assets/images/map2.png';
 import location4 from '../../assets/images/location4.svg';
 import locationBackground from '../../assets/images/locationBackground.svg';
 
@@ -24,7 +24,7 @@ export default function Track1Location() {
         </div>
         <div>
           <AddressText>
-            서울시 금천구 가산동 459-14 현대타워가산 DK 512호, 513호
+            서울특별시 금천구 가산동 60-26 가산퍼블릭 제B동 2015호 2016호
             (주)스페이스씨엘
           </AddressText>
           <PhoneNumber>02) 6958-8204</PhoneNumber>

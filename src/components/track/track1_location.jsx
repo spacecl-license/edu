@@ -29,7 +29,7 @@ export default function Track1Location() {
           </AddressText>
           <PhoneNumber>02) 6958-8204</PhoneNumber>
           <SubwayText>
-            1호선 또는 7호선 가산디지털단지역 8번 출구 도보 5분
+            1호선 또는 7호선 가산디지털단지역 6번 출구 도보 5분
           </SubwayText>
         </div>
       </BottomTextWrap>

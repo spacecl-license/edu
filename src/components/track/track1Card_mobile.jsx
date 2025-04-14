@@ -66,57 +66,6 @@ export default function Track1CardMobile() {
         <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
         <div>
           <Card>
-            <Image src={track4} alt="track1" />
-            <CardTextWrapper>
-              <TitleSide>
-                <KMove>
-                  일본취업반 K-Move <br /> 트랙 Ⅱ
-                </KMove>
-                <CardText>
-                  2025년 일본취업 클라우드 기반
-                  <br />
-                  풀스택 웹개발자 양성과정
-                </CardText>
-              </TitleSide>
-            </CardTextWrapper>
-          </Card>
-        </div>
-
-        <ProgramExplain>
-          <LineWrapper>
-            <Line />
-          </LineWrapper>
-          <Title>
-            <div>
-              <Period>연수기간</Period>
-              <PeriodText>
-                2025년 4월 1일 - 2025년 10월 16일
-                <br /> (총 29주, 1016시간 )
-              </PeriodText>
-            </div>
-            <div>
-              <Period>연수장소</Period>
-              <PeriodText>
-                한국소프트웨어 인재개발원 <br /> (가산디지털단지역 도보 5분 내)
-              </PeriodText>
-            </div>
-            <div>
-              <Period>연수비용</Period>
-              <PeriodText>100% 국비지원 무료교육</PeriodText>
-            </div>
-            <div>
-              <Period>연수인원</Period>
-              <PeriodText>20명 선착순 지원</PeriodText>
-            </div>
-          </Title>
-          <ApplyButton onClick={onOpen}>지원하기</ApplyButton>
-          <OpenModalMobile isOpen={isOpen} onClose={onClose} />
-        </ProgramExplain>
-      </ProgramWrap>
-      <ProgramWrap>
-        <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
-        <div>
-          <Card>
             <Image src={track5} alt="track1" />
             <Image src={linear} alt="track1" />
             <CardTextWrapper>
@@ -161,6 +110,59 @@ export default function Track1CardMobile() {
             </div>
           </Title>
           <ApplyButton onClick={onOpen}>지원하기</ApplyButton>
+          <OpenModalMobile isOpen={isOpen} onClose={onClose} />
+        </ProgramExplain>
+      </ProgramWrap>
+      <ProgramWrap>
+        <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
+        <div>
+          <Card>
+            <Image src={track4} alt="track1" />
+            <CardTextWrapper>
+              <TitleSide>
+                <KMove>
+                  일본취업반 K-Move <br /> 트랙 Ⅱ
+                </KMove>
+                <CardText>
+                  2025년 일본취업 클라우드 기반
+                  <br />
+                  풀스택 웹개발자 양성과정
+                </CardText>
+              </TitleSide>
+            </CardTextWrapper>
+          </Card>
+        </div>
+
+        <ProgramExplain>
+          <LineWrapper>
+            <Line />
+          </LineWrapper>
+          <Title>
+            <div>
+              <Period>연수기간</Period>
+              <PeriodText>
+                2025년 4월 1일 - 2025년 10월 16일
+                <br /> (총 29주, 1016시간 )
+              </PeriodText>
+            </div>
+            <div>
+              <Period>연수장소</Period>
+              <PeriodText>
+                한국소프트웨어 인재개발원 <br /> (가산디지털단지역 도보 5분 내)
+              </PeriodText>
+            </div>
+            <div>
+              <Period>연수비용</Period>
+              <PeriodText>100% 국비지원 무료교육</PeriodText>
+            </div>
+            <div>
+              <Period>연수인원</Period>
+              <PeriodText>20명 선착순 지원</PeriodText>
+            </div>
+          </Title>
+          <ApplyButton onClick={onOpen} disabled>
+            모집마감
+          </ApplyButton>
           <OpenModalMobile isOpen={isOpen} onClose={onClose} />
         </ProgramExplain>
       </ProgramWrap>

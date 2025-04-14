@@ -47,8 +47,9 @@ export default function MainSliderMobile() {
             <SlideText>
               <BigText>일본취업 연수과정 연수생 모집 중</BigText>
               <SmallText>
-                2025년 K-Move 일본취업 클라우드 웹개발자 과정(트랙Ⅱ) <br />
                 2025년 K-Move 일본취업 IT·SW 전문가 양성과정(트랙Ⅰ)
+                <br />
+                2025년 K-Move 일본취업 클라우드 웹개발자 과정(모집마감)
               </SmallText>
               <span>연수생 모집중</span>
               <ButtonWrapper>
@@ -89,8 +90,9 @@ export default function MainSliderMobile() {
             <SlideText>
               <BigText>일본취업 연수과정 연수생 모집 중</BigText>
               <SmallText>
-                2025년 K-Move 일본취업 클라우드 웹개발자 과정(트랙Ⅱ) <br />
                 2025년 K-Move 일본취업 IT·SW 전문가 양성과정(트랙Ⅰ)
+                <br />
+                2025년 K-Move 일본취업 클라우드 웹개발자 과정(모집마감)
               </SmallText>
               <span>연수생 모집중</span>
               <ButtonWrapper>

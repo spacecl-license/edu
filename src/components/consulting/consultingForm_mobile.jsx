@@ -11,6 +11,7 @@ import {
   Button,
 } from '@chakra-ui/react';
 import emailjs from 'emailjs-com';
+import { SITE_COPY } from '../../constants/siteCopy';
 
 const CustomInput = (props) => {
   return (
@@ -129,7 +130,7 @@ export default function ConsultingFormMobile() {
         </FormControl> */}
 
         <FormControl mt={10} isRequired>
-          <CustomLabel>지원하는 연수과정은 무엇입니까?</CustomLabel>
+          <CustomLabel>{SITE_COPY.forms.courseFieldLabel}</CustomLabel>
           <Select
             value={course}
             name="course"
@@ -137,11 +138,11 @@ export default function ConsultingFormMobile() {
             placeholder="선택해주세요"
             sx={{ border: 'none', backgroundColor: 'rgb(248, 249, 250)' }}
           >
-            {/* <option>일본어 클래스(3월 개강)</option> */}
-            {/* <option>
-              일본취업 클라우드 기반 풀스택 웹개발자 양성과정(4월 개강)
-            </option> */}
-            <option>일본취업 산업융합 IT•SW 전문가 양성과정(6월 개강)</option>
+            {SITE_COPY.forms.courseOptions.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
           </Select>
         </FormControl>
 

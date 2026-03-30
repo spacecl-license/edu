@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import special from '../../assets/images/special.png';
 import Track1Card from './track1Card';
 import Track1Intro from './track1Intro';
 import Track1Time from './track1Time';
@@ -11,7 +10,8 @@ import Track1CardMobile from './track1Card_mobile';
 import Track1IntroMobile from './track1Intro_mobile';
 import Track1TimeMobile from './track1Time_mobile';
 import Track1ProgramMobile from './track1Program_mobile';
-import SpecialLineup from './special_lineup';
+import SpecialLineup, { SpecialLineupDesktop } from './special_lineup';
+import { SITE_COPY } from '../../constants/siteCopy';
 import Track1LocationMobile from './track1_location_mobile';
 
 export default function Track1() {
@@ -56,13 +56,13 @@ export default function Track1() {
 
       {/* 연수생 특전 */}
       <Desktop>
-        <SpecialText>연수생 특전</SpecialText>
+        <SpecialText>{SITE_COPY.traineeBenefits.barTitle}</SpecialText>
         <SpecialWrap>
-          <SpecialImage src={special} />
+          <SpecialLineupDesktop />
         </SpecialWrap>
       </Desktop>
       <Mobile>
-        <SpecialTextMobile>연수생 특전</SpecialTextMobile>
+        <SpecialTextMobile>{SITE_COPY.traineeBenefits.barTitle}</SpecialTextMobile>
         <SpecialLineup />
       </Mobile>
 
@@ -85,17 +85,10 @@ const SquareBack2 = styled.div`
 
 const SpecialWrap = styled.div`
   width: 100%;
-  height: 1000px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10rem;
-  margin-top: 5rem;
-`;
-const SpecialImage = styled.img`
-  width: 1200px;
-  height: 904px;
 `;
 
 const SpecialText = styled.div`

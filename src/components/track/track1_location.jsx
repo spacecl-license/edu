@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import location3 from '../../assets/images/map2.png';
-import location4 from '../../assets/images/location4.svg';
+import location3 from '../../assets/images/map_real.png';
 import locationBackground from '../../assets/images/locationBackground.svg';
+import { SITE_COPY } from '../../constants/siteCopy';
+
+const H = SITE_COPY.hq;
+const HL = H.labels;
 
 export default function Track1Location() {
   return (
     <Wrapper>
       <TopTextWrap>
-        <LocationTitle>(본사) 주식회사 스페이스씨엘</LocationTitle>
-        <Loca>LOCATION</Loca>
+        <LocationTitle>{H.pageTitle}</LocationTitle>
+        <Loca>{H.subtitles.en}</Loca>
       </TopTextWrap>
 
       <ImageWrap>
@@ -18,19 +21,14 @@ export default function Track1Location() {
 
       <BottomTextWrap>
         <div>
-          <Address>주소</Address>
-          <Phone>전화</Phone>
-          <Subway>지하철</Subway>
+          <Address>{HL.address}</Address>
+          <Phone>{HL.phone}</Phone>
+          <Subway>{HL.subway}</Subway>
         </div>
         <div>
-          <AddressText>
-            서울특별시 금천구 가산동 60-26 가산퍼블릭 제B동 2015호 2016호
-            (주)스페이스씨엘
-          </AddressText>
-          <PhoneNumber>02) 6958-8204</PhoneNumber>
-          <SubwayText>
-            1호선 또는 7호선 가산디지털단지역 6번 출구 도보 5분
-          </SubwayText>
+          <AddressText>{H.desktop.address}</AddressText>
+          <PhoneNumber>{H.desktop.phone}</PhoneNumber>
+          <SubwayText>{H.desktop.subway}</SubwayText>
         </div>
       </BottomTextWrap>
     </Wrapper>

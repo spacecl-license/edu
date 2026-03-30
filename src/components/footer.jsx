@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import footerLogo from '../assets/images/footerLogo.svg';
+import { SITE_COPY } from '../constants/siteCopy';
+
+const F = SITE_COPY.footer.desktop;
 
 export default function Footer() {
   return (
@@ -8,24 +11,27 @@ export default function Footer() {
       <FooterLogo src={footerLogo} alt="footer logo" />
       <FooterTextArea>
         <FooterTextWrap>
-          <FooterText>(주)스페이스씨엘 &nbsp;&nbsp;&nbsp;|</FooterText>
           <FooterText>
-            서울특별시 금천구 가산동 60-26 가산퍼블릭 제B동 2015호 2016호
-            (주)스페이스씨엘
+            {F.companyLead} &nbsp;&nbsp;&nbsp;|
+          </FooterText>
+          <FooterText>{F.addressLine}</FooterText>
+        </FooterTextWrap>
+        <FooterTextWrap>
+          <FooterText>
+            {F.bizRegLabel} {F.bizReg}
+          </FooterText>
+          <FooterText>
+            {F.ceoLabel} {F.ceo}
           </FooterText>
         </FooterTextWrap>
         <FooterTextWrap>
-          <FooterText>사업자 등록번호 : 343-81-02656</FooterText>
-          <FooterText>대표 : 박희원</FooterText>
-        </FooterTextWrap>
-        <FooterTextWrap>
           <Frame6>
-            <FooterText>Tel</FooterText>
-            <FooterText>02-6958-8204</FooterText>
+            <FooterText>{F.telLabel}</FooterText>
+            <FooterText>{F.tel}</FooterText>
           </Frame6>
           <Frame6>
-            <FooterText>E-mail</FooterText>
-            <FooterText>spacecl.track@gmail.com</FooterText>
+            <FooterText>{F.emailLabel}</FooterText>
+            <FooterText>{F.email}</FooterText>
           </Frame6>
         </FooterTextWrap>
       </FooterTextArea>

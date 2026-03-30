@@ -7,13 +7,17 @@ import { Link } from 'react-router-dom';
 import { useDisclosure } from '@chakra-ui/react';
 import OpenModal from '../modal';
 import track1Background from '../../assets/images/track1_background.svg';
+import { SITE_COPY } from '../../constants/siteCopy';
 
 export default function Track1Card() {
+  const pi = SITE_COPY.programIntro;
+  const t2 = pi.track2;
+  const t1 = pi.track1;
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Wrapper>
       <KMoveItWrap>
-        <KMoveIt>K-Move 일본 IT기업 취업 국비 무료 교육</KMoveIt>
+        <KMoveIt>{pi.banner}</KMoveIt>
       </KMoveItWrap>
 
       {/* 카드 */}
@@ -63,63 +67,17 @@ export default function Track1Card() {
 
       <ProgramWrap>
         <div>
-          <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
-          <div>
-            <Card>
-              <Image src={track5} alt="track1" />
-              <Linear src={linear} alt="linear" />
-              <CardTextWrapper>
-                <TitleSide>
-                  <KMove2>일본취업반 K-Move 트랙 Ⅰ </KMove2>
-                  <CardText2>
-                    2025년 일본취업 산업융합
-                    <br />
-                    IT•SW 전문가 양성과정
-                  </CardText2>
-                </TitleSide>
-              </CardTextWrapper>
-            </Card>
-
-            <ProgramExplain>
-              <Line />
-              <div>
-                <Title>
-                  <Period>연수기간</Period>
-                  <Period>연수장소</Period>
-                  <Period>연수비용</Period>
-                  <Period>연수인원</Period>
-                </Title>
-
-                <TextSide>
-                  <PeriodText>
-                    2025년 6월 3일 - 2025년 11월 27일 (총 26주, 928시간)
-                  </PeriodText>
-                  <PeriodText>
-                    한국소프트웨어 인재개발원(가산디지털단지역 도보 5분 내)
-                  </PeriodText>
-                  <PeriodText>100% 국비지원 무료교육</PeriodText>
-                  <PeriodText>15명 선착순 지원</PeriodText>
-                </TextSide>
-              </div>
-              <ApplyButton onClick={onOpen}>지원하기</ApplyButton>
-              <OpenModal isOpen={isOpen} onClose={onClose} />
-            </ProgramExplain>
-          </div>
-        </div>
-      </ProgramWrap>
-      <ProgramWrap>
-        <div>
-          <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
+          <TrackIntroTitle>{pi.sectionTitle}</TrackIntroTitle>
           <div>
             <Card>
               <Image src={track4} alt="track1" />
               <CardTextWrapper>
                 <TitleSide>
-                  <KMove>일본취업반 K-Move 트랙 Ⅱ </KMove>
+                  <KMove>{t2.titleDesktop}</KMove>
                   <CardText>
-                    2025년 일본취업 클라우드 기반
+                    {t2.subtitleLine1}
                     <br />
-                    풀스택 웹개발자 양성과정
+                    {t2.subtitleLine2}
                   </CardText>
                 </TitleSide>
               </CardTextWrapper>
@@ -129,25 +87,65 @@ export default function Track1Card() {
               <Line />
               <div>
                 <Title>
-                  <Period>연수기간</Period>
-                  <Period>연수장소</Period>
-                  <Period>연수비용</Period>
-                  <Period>연수인원</Period>
+                  <Period>{pi.fieldLabels.period}</Period>
+                  <Period>{pi.fieldLabels.place}</Period>
+                  <Period>{pi.fieldLabels.cost}</Period>
+                  <Period>{pi.fieldLabels.capacity}</Period>
                 </Title>
 
                 <TextSide>
-                  <PeriodText>
-                    2025년 4월 1일 - 2025년 10월 16일 (총 29주, 1016시간 )
-                  </PeriodText>
-                  <PeriodText>
-                    한국소프트웨어 인재개발원(가산디지털단지역 도보 5분 내)
-                  </PeriodText>
-                  <PeriodText>100% 국비지원 무료교육</PeriodText>
-                  <PeriodText>20명 선착순 지원</PeriodText>
+                  <PeriodText>{t2.periodDesktop}</PeriodText>
+                  <PeriodText>{t2.placeDesktop}</PeriodText>
+                  <PeriodText>{t2.cost}</PeriodText>
+                  <PeriodText>{t2.capacity}</PeriodText>
                 </TextSide>
               </div>
-              <ApplyButton onClick={onOpen} disabled>
-                모집마감
+              <ApplyButton onClick={onOpen} disabled={!t2.recruitingOpen}>
+                {t2.recruitingOpen ? pi.applyOpen : pi.applyClosed}
+              </ApplyButton>
+              <OpenModal isOpen={isOpen} onClose={onClose} />
+            </ProgramExplain>
+          </div>
+        </div>
+      </ProgramWrap>
+      <ProgramWrap>
+        <div>
+          <TrackIntroTitle>{pi.sectionTitle}</TrackIntroTitle>
+          <div>
+            <Card>
+              <Image src={track5} alt="track1" />
+              <Linear src={linear} alt="linear" />
+              <CardTextWrapper>
+                <TitleSide>
+                  <KMove2>{t1.titleDesktop}</KMove2>
+                  <CardText2>
+                    {t1.subtitleLine1}
+                    <br />
+                    {t1.subtitleLine2}
+                  </CardText2>
+                </TitleSide>
+              </CardTextWrapper>
+            </Card>
+
+            <ProgramExplain>
+              <Line />
+              <div>
+                <Title>
+                  <Period>{pi.fieldLabels.period}</Period>
+                  <Period>{pi.fieldLabels.place}</Period>
+                  <Period>{pi.fieldLabels.cost}</Period>
+                  <Period>{pi.fieldLabels.capacity}</Period>
+                </Title>
+
+                <TextSide>
+                  <PeriodText>{t1.periodDesktop}</PeriodText>
+                  <PeriodText>{t1.placeDesktop}</PeriodText>
+                  <PeriodText>{t1.cost}</PeriodText>
+                  <PeriodText>{t1.capacity}</PeriodText>
+                </TextSide>
+              </div>
+              <ApplyButton onClick={onOpen} disabled={!t1.recruitingOpen}>
+                {t1.recruitingOpen ? pi.applyOpen : pi.applyClosed}
               </ApplyButton>
               <OpenModal isOpen={isOpen} onClose={onClose} />
             </ProgramExplain>

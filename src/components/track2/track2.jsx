@@ -12,6 +12,7 @@ import Track2IntroMobile from '../track2/track2Intro_mobile';
 import Track2TimeMobile from '../track2/track2Time_mobile';
 import Track2ProgramMobile from '../track2/track2Program_mobile';
 import SpecialLineup from '../track/special_lineup';
+import { SITE_COPY } from '../../constants/siteCopy';
 import Track2LocationMobile from '../track2/track2_location_mobile';
 export default function Track2() {
   return (
@@ -25,7 +26,7 @@ export default function Track2() {
       </Mobile>
 
       <Mobile>
-        <SpecialTextMobile>연수생 특전</SpecialTextMobile>
+        <SpecialTextMobile>{SITE_COPY.traineeBenefits.barTitle}</SpecialTextMobile>
         <SpecialLineup />
       </Mobile>
 
@@ -60,7 +61,7 @@ export default function Track2() {
 
       {/* 연수생 특전 */}
       <Desktop>
-        <SpecialText>연수생 특전</SpecialText>
+        <SpecialText>{SITE_COPY.traineeBenefits.barTitle}</SpecialText>
         <SpecialWrap>
           <SpecialImage src={special} />
         </SpecialWrap>

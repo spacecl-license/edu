@@ -7,13 +7,17 @@ import { Link } from 'react-router-dom';
 import { useDisclosure } from '@chakra-ui/react';
 import track1Background from '../../assets/images/track1_background.svg';
 import OpenModalMobile from '../modal_mobile';
+import { SITE_COPY } from '../../constants/siteCopy';
 
 export default function Track1CardMobile() {
+  const pi = SITE_COPY.programIntro;
+  const t2 = pi.track2;
+  const t1 = pi.track1;
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Wrapper>
       <KMoveItWrap>
-        <KMoveIt>K-Move 일본 IT기업 취업 국비 무료 교육</KMoveIt>
+        <KMoveIt>{pi.banner}</KMoveIt>
       </KMoveItWrap>
       {/* 카드 */}
       {/* <ProgramWrap>
@@ -63,70 +67,20 @@ export default function Track1CardMobile() {
       </ProgramWrap> */}
 
       <ProgramWrap>
-        <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
-        <div>
-          <Card>
-            <Image src={track5} alt="track1" />
-            <Image src={linear} alt="track1" />
-            <CardTextWrapper>
-              <TitleSide>
-                <KMove2>
-                  일본취업반 K-Move <br /> 트랙 Ⅰ
-                </KMove2>
-                <CardText2>
-                  2025년 일본취업 산업융합
-                  <br />
-                  IT•SW 전문가 양성과정
-                </CardText2>
-              </TitleSide>
-            </CardTextWrapper>
-          </Card>
-        </div>
-
-        <ProgramExplain>
-          <LineWrapper>
-            <Line />
-          </LineWrapper>
-          <Title>
-            <div>
-              <Period>연수기간</Period>
-              <PeriodText>
-                2025년 6월 3일 - 2025년 11월 27일 <br /> (총 26주, 928시간)
-              </PeriodText>
-            </div>
-            <div>
-              <Period>연수장소</Period>
-              <PeriodText>
-                한국소프트웨어 인재개발원 <br /> (가산디지털단지역 도보 5분 내)
-              </PeriodText>
-            </div>
-            <div>
-              <Period>연수비용</Period>
-              <PeriodText>100% 국비지원 무료교육</PeriodText>
-            </div>
-            <div>
-              <Period>연수인원</Period>
-              <PeriodText>15명 선착순 지원</PeriodText>
-            </div>
-          </Title>
-          <ApplyButton onClick={onOpen}>지원하기</ApplyButton>
-          <OpenModalMobile isOpen={isOpen} onClose={onClose} />
-        </ProgramExplain>
-      </ProgramWrap>
-      <ProgramWrap>
-        <TrackIntroTitle>프로그램 소개</TrackIntroTitle>
+        <TrackIntroTitle>{pi.sectionTitle}</TrackIntroTitle>
         <div>
           <Card>
             <Image src={track4} alt="track1" />
             <CardTextWrapper>
               <TitleSide>
                 <KMove>
-                  일본취업반 K-Move <br /> 트랙 Ⅱ
+                  {t2.titleMobileLines[0]}
+                  <br /> {t2.titleMobileLines[1]}
                 </KMove>
                 <CardText>
-                  2025년 일본취업 클라우드 기반
+                  {t2.subtitleLine1}
                   <br />
-                  풀스택 웹개발자 양성과정
+                  {t2.subtitleLine2}
                 </CardText>
               </TitleSide>
             </CardTextWrapper>
@@ -139,29 +93,83 @@ export default function Track1CardMobile() {
           </LineWrapper>
           <Title>
             <div>
-              <Period>연수기간</Period>
+              <Period>{pi.fieldLabels.period}</Period>
               <PeriodText>
-                2025년 4월 1일 - 2025년 10월 16일
-                <br /> (총 29주, 1016시간 )
+                {t2.periodMobileLine1}
+                <br /> {t2.periodMobileLine2}
               </PeriodText>
             </div>
             <div>
-              <Period>연수장소</Period>
+              <Period>{pi.fieldLabels.place}</Period>
               <PeriodText>
-                한국소프트웨어 인재개발원 <br /> (가산디지털단지역 도보 5분 내)
+                {t2.placeMobileLines[0]} <br /> {t2.placeMobileLines[1]}
               </PeriodText>
             </div>
             <div>
-              <Period>연수비용</Period>
-              <PeriodText>100% 국비지원 무료교육</PeriodText>
+              <Period>{pi.fieldLabels.cost}</Period>
+              <PeriodText>{t2.cost}</PeriodText>
             </div>
             <div>
-              <Period>연수인원</Period>
-              <PeriodText>20명 선착순 지원</PeriodText>
+              <Period>{pi.fieldLabels.capacity}</Period>
+              <PeriodText>{t2.capacity}</PeriodText>
             </div>
           </Title>
-          <ApplyButton onClick={onOpen} disabled>
-            모집마감
+          <ApplyButton onClick={onOpen} disabled={!t2.recruitingOpen}>
+            {t2.recruitingOpen ? pi.applyOpen : pi.applyClosed}
+          </ApplyButton>
+          <OpenModalMobile isOpen={isOpen} onClose={onClose} />
+        </ProgramExplain>
+      </ProgramWrap>
+      <ProgramWrap>
+        <TrackIntroTitle>{pi.sectionTitle}</TrackIntroTitle>
+        <div>
+          <Card>
+            <Image src={track5} alt="track1" />
+            <Image src={linear} alt="track1" />
+            <CardTextWrapper>
+              <TitleSide>
+                <KMove2>
+                  {t1.titleMobileLines[0]}
+                  <br /> {t1.titleMobileLines[1]}
+                </KMove2>
+                <CardText2>
+                  {t1.subtitleLine1}
+                  <br />
+                  {t1.subtitleLine2}
+                </CardText2>
+              </TitleSide>
+            </CardTextWrapper>
+          </Card>
+        </div>
+
+        <ProgramExplain>
+          <LineWrapper>
+            <Line />
+          </LineWrapper>
+          <Title>
+            <div>
+              <Period>{pi.fieldLabels.period}</Period>
+              <PeriodText>
+                {t1.periodMobileLine1} <br /> {t1.periodMobileLine2}
+              </PeriodText>
+            </div>
+            <div>
+              <Period>{pi.fieldLabels.place}</Period>
+              <PeriodText>
+                {t1.placeMobileLines[0]} <br /> {t1.placeMobileLines[1]}
+              </PeriodText>
+            </div>
+            <div>
+              <Period>{pi.fieldLabels.cost}</Period>
+              <PeriodText>{t1.cost}</PeriodText>
+            </div>
+            <div>
+              <Period>{pi.fieldLabels.capacity}</Period>
+              <PeriodText>{t1.capacity}</PeriodText>
+            </div>
+          </Title>
+          <ApplyButton onClick={onOpen} disabled={!t1.recruitingOpen}>
+            {t1.recruitingOpen ? pi.applyOpen : pi.applyClosed}
           </ApplyButton>
           <OpenModalMobile isOpen={isOpen} onClose={onClose} />
         </ProgramExplain>

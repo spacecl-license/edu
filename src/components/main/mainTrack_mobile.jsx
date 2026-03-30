@@ -4,6 +4,9 @@ import track1 from '../../assets/images/track1.png';
 import track2 from '../../assets/images/track2.png';
 import { Link } from 'react-router-dom';
 import vector from '../../assets/images/vector.svg';
+import { SITE_COPY } from '../../constants/siteCopy';
+
+const MT = SITE_COPY.mainTrack.cardText.mobile;
 
 export default function MainTrackMobile() {
   return (
@@ -15,9 +18,9 @@ export default function MainTrackMobile() {
             <TitleSide>
               {/* <KMove>일본어 클래스(3월)</KMove> */}
               <CardText>
-                K-Move(Track)
+                {MT.line1}
                 <br />
-                2025년 일본취업 IT•SW•ICT 과정
+                {MT.line2}
               </CardText>
             </TitleSide>
           </CardTextWrapper>

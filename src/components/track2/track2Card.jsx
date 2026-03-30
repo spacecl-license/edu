@@ -15,13 +15,11 @@ export default function Track2Card() {
 
       {/* 트랙 Ⅰ, Ⅱ */}
       <LinkWrap>
-        {/* <Link to="/track">
-          <KmoveTrack1>
-            K-Move 트랙 Ⅰ
-          </KmoveTrack1>
-        </Link> */}
-        <Link to="/track">
+        <Link to="/track2">
           <KmoveTrack2>K-Move 트랙 Ⅱ</KmoveTrack2>
+        </Link>
+        <Link to="/track">
+          <KmoveTrack1>K-Move 트랙 Ⅰ</KmoveTrack1>
         </Link>
       </LinkWrap>
 

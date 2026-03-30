@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -10,10 +10,19 @@ import mainSlideButton1 from '../assets/images/mainSlideButton1.svg';
 import mainSlideButton2 from '../assets/images/mainSlideButton2.svg';
 import mainSlideButton3 from '../assets/images/mainSlideButton3.svg';
 import { Link } from 'react-router-dom';
+import { SITE_COPY } from '../constants/siteCopy';
+
+const MS = SITE_COPY.mainSlider;
+const JP = MS.japanesePanel;
+
+const SLIDE_SRC = {
+  slide1,
+  slide2,
+  slide3,
+};
 
 export default function MainSliderMobile() {
   const slickRef = useRef(null);
-  const [activeSlide, setActiveSlide] = useState(0);
 
   const kakao = () => {
     if (window.Kakao) {
@@ -28,151 +37,79 @@ export default function MainSliderMobile() {
     });
   };
 
+  const slideCount = MS.slides.length;
+
   const settings = {
-    infinite: true,
+    infinite: slideCount > 1,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    beforeChange: (current, next) => {
-      setActiveSlide(next);
-    },
+    autoplay: slideCount > 1,
   };
+
+  const renderJapanesePanel = () => (
+    <SlideTextJapanese>
+      <JapaneseTitle>{JP.title}</JapaneseTitle>
+      <JapaneseDivider />
+      <div>
+        {JP.bullets.map((line, i) => (
+          <SlideTextJapaneseText key={i}>{line}</SlideTextJapaneseText>
+        ))}
+      </div>
+    </SlideTextJapanese>
+  );
+
   return (
     <Wrapper>
       <Slider {...settings} ref={slickRef}>
-        <div>
-          <SlideWrap>
-            <SlideImg src={slide1} />
-            <SlideText>
-              <BigText>일본취업 연수과정 연수생 모집 중</BigText>
-              <SmallText>
-                2025년 K-Move 일본취업 IT·SW 전문가 양성과정(트랙Ⅰ)
-                <br />
-                2025년 K-Move 일본취업 클라우드 웹개발자 과정(모집마감)
-              </SmallText>
-              <span>연수생 모집중</span>
-              <ButtonWrapper>
-                <Link to="/track">
-                  <MainSliderButton src={mainSlideButton1} />
-                </Link>
-                <MainSliderButton
-                  src={mainSlideButton2}
-                  style={{ width: '6.5rem' }}
-                  onClick={kakao}
-                />
-                <MainSliderButton
-                  src={mainSlideButton3}
-                  onClick={() => (document.location.href = 'tel:0269588204')}
-                />
-              </ButtonWrapper>
-              <SlideTextJapanese>
-                <JapaneseTitle>K-Move스쿨 일본취업반</JapaneseTitle>
-                <JapaneseDivider />
-                <div>
-                  <SlideTextJapaneseText>
-                    · IT Programming+일본어
-                  </SlideTextJapaneseText>
-                  <SlideTextJapaneseText>
-                    · 채용약정기업 추천매칭
-                  </SlideTextJapaneseText>
-                  <SlideTextJapaneseText>
-                    · 전액 무료 / 교육생 모집중
-                  </SlideTextJapaneseText>
-                </div>
-              </SlideTextJapanese>
-            </SlideText>
-          </SlideWrap>
-        </div>
-        <div>
-          <SlideWrap>
-            <SlideImg src={slide2} />
-            <SlideText>
-              <BigText>일본취업 연수과정 연수생 모집 중</BigText>
-              <SmallText>
-                2025년 K-Move 일본취업 IT·SW 전문가 양성과정(트랙Ⅰ)
-                <br />
-                2025년 K-Move 일본취업 클라우드 웹개발자 과정(모집마감)
-              </SmallText>
-              <span>연수생 모집중</span>
-              <ButtonWrapper>
-                <Link to="/track">
-                  <MainSliderButton src={mainSlideButton1} />
-                </Link>
-                <MainSliderButton
-                  src={mainSlideButton2}
-                  style={{ width: '6.5rem' }}
-                  onClick={kakao}
-                />
-                <MainSliderButton
-                  src={mainSlideButton3}
-                  onClick={() => (document.location.href = 'tel:0269588204')}
-                />
-              </ButtonWrapper>
-              <SlideTextJapanese>
-                <JapaneseTitle>K-Move스쿨 일본취업반</JapaneseTitle>
-                <JapaneseDivider />
-                <div>
-                  <SlideTextJapaneseText>
-                    · IT Programming+일본어
-                  </SlideTextJapaneseText>
-                  <SlideTextJapaneseText>
-                    · 채용약정기업 추천매칭
-                  </SlideTextJapaneseText>
-                  <SlideTextJapaneseText>
-                    · 전액 무료 / 교육생 모집중
-                  </SlideTextJapaneseText>
-                </div>
-              </SlideTextJapanese>
-            </SlideText>
-          </SlideWrap>
-        </div>
-        <div>
-          <SlideWrap>
-            <SlideImg src={slide3} />
-            <SlideText>
-              <BigText>
-                국내, 일본 최신 트렌드에 맞춘
-                <br />
-                IT 핵심 기술을 반영한 연수과정
-              </BigText>
-              <SmallText>
-                기업형 글로벌 아카데미 스페이스씨엘
-                <br />
-                맞춤형 교육으로 글로벌 취업의 첫걸음!
-              </SmallText>
-              <ButtonWrapper>
-                <Link to="/track">
-                  <MainSliderButton src={mainSlideButton1} />
-                </Link>
-                <MainSliderButton
-                  src={mainSlideButton2}
-                  style={{ width: '6.5rem' }}
-                  onClick={kakao}
-                />
-                <MainSliderButton
-                  src={mainSlideButton3}
-                  onClick={() => (document.location.href = 'tel:0269588204')}
-                />
-              </ButtonWrapper>
-              <SlideTextJapanese>
-                <JapaneseTitle>K-Move스쿨 일본취업반</JapaneseTitle>
-                <JapaneseDivider />
-                <div>
-                  <SlideTextJapaneseText>
-                    · IT Programming+일본어
-                  </SlideTextJapaneseText>
-                  <SlideTextJapaneseText>
-                    · 채용약정기업 추천매칭
-                  </SlideTextJapaneseText>
-                  <SlideTextJapaneseText>
-                    · 전액 무료 / 교육생 모집중
-                  </SlideTextJapaneseText>
-                </div>
-              </SlideTextJapanese>
-            </SlideText>
-          </SlideWrap>
-        </div>
+        {MS.slides.map((s) => {
+          const imgSrc = SLIDE_SRC[s.image];
+          if (!imgSrc) return null;
+          return (
+            <div key={s.id}>
+              <SlideWrap>
+                <SlideImg src={imgSrc} alt="" />
+                <SlideText>
+                  {s.kind === 'recruiting' ? (
+                    <>
+                      <BigText>{MS.recruiting.bigText}</BigText>
+                      <SmallText>{MS.recruiting.smallText}</SmallText>
+                      <span>{MS.mobileOnly.recruitingBadge}</span>
+                    </>
+                  ) : (
+                    <>
+                      <BigText>
+                        {MS.trend.bigTextMobileLines[0]}
+                        <br />
+                        {MS.trend.bigTextMobileLines[1]}
+                      </BigText>
+                      <SmallText>
+                        {MS.trend.smallLine1}
+                        <br />
+                        {MS.trend.smallLine2}
+                      </SmallText>
+                    </>
+                  )}
+                  <ButtonWrapper>
+                    <Link to="/track">
+                      <MainSliderButton src={mainSlideButton1} />
+                    </Link>
+                    <MainSliderButton
+                      src={mainSlideButton2}
+                      style={{ width: '6.5rem' }}
+                      onClick={kakao}
+                    />
+                    <MainSliderButton
+                      src={mainSlideButton3}
+                      onClick={() => (document.location.href = 'tel:0269588204')}
+                    />
+                  </ButtonWrapper>
+                  {renderJapanesePanel()}
+                </SlideText>
+              </SlideWrap>
+            </div>
+          );
+        })}
       </Slider>
     </Wrapper>
   );

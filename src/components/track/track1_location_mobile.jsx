@@ -157,16 +157,6 @@ const LocationImage1 = styled.img`
   height: 240px;
 `;
 
-const LocationIcon = styled.div`
-  position: absolute;
-  top: 57%;
-  left: 35%;
-`;
-
-const LocationImage2 = styled.img`
-  object-fit: cover;
-`;
-
 const Rectangle = styled.img`
   width: 138px;
   height: 220px;

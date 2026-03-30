@@ -192,18 +192,3 @@ const EduTimeText = styled.span`
   text-align: left;
   height: 100px;
 `;
-
-const TimeBox = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px;
-  width: 53px;
-  height: 30px;
-  background-color: #eef1f3;
-  padding: 3px 29px;
-  font-size: 1rem;
-  font-family: Pretendard, sans-serif;
-  font-weight: 400;
-  bottom: 20px;
-`;

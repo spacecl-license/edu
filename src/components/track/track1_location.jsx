@@ -148,17 +148,3 @@ const LocationImage1 = styled.img`
   object-fit: cover;
   width: 1200px;
 `;
-
-const LocationIcon = styled.div`
-  width: 228px;
-  height: 47px;
-  position: absolute;
-  top: 55%;
-  left: 28%;
-`;
-
-const LocationImage2 = styled.img`
-  width: 228px;
-  height: 47px;
-  object-fit: cover;
-`;

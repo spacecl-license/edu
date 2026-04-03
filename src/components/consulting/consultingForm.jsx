@@ -152,6 +152,7 @@ export default function ConsultingForm() {
             <option>없음</option>
             <option>입문</option>
             <option>기초</option>
+            <option>중급</option>
           </Select>
         </FormControl>
 

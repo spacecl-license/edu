@@ -67,12 +67,12 @@ export default function Track1() {
       </Mobile>
 
       {/* 찾아오시는 길 */}
-      <Desktop>
+      {/* <Desktop>
         <Track1Location />
       </Desktop>
       <Mobile>
         <Track1LocationMobile />
-      </Mobile>
+      </Mobile> */}
     </RootWrapper>
   );
 }

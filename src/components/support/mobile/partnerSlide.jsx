@@ -90,7 +90,9 @@ const TitleWrapper = styled.div`
 `;
 
 const Image = styled.img`
-  object-fit: fit;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
 `;
 
 const Company = styled.span`

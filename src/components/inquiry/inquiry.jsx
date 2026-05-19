@@ -40,6 +40,7 @@ const RootWrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 3rem;
+	padding-bottom: 5rem;
 `;
 
 const TitleWrapper = styled.div`

@@ -27,11 +27,12 @@ const Group = styled.div`
 `;
 
 const InputFrame = styled.div`
-	width: 792px;
-	height: 803px;
+	max-width: 560px;
+	width: 100%;
+	min-height: 0;
 	background-color: rgba(255, 255, 255, 0.4);
 	border-radius: 20px;
 	backdrop-filter: blur(30px);
-	padding: 40px 94px 40px 94px;
+	padding: 32px 48px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 `;

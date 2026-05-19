@@ -20,6 +20,7 @@ export default function InquiryForm() {
 
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
+  const [email, setEmail] = useState('');
   const [inquiry, setInquiry] = useState('');
 
   const handleNameChange = (event) => {
@@ -33,6 +34,9 @@ export default function InquiryForm() {
     setContact(formattedNumber);
   };
 
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
 
   const handleInquiryChange = (event) => {
     setInquiry(event.target.value);
@@ -70,6 +74,17 @@ export default function InquiryForm() {
           <FormLabel>연락처</FormLabel>
           <CustomInput value={contact} name="contact" onChange={handleContactChange} />
         </FormControl>
+        <FormControl mt={10} isRequired>
+          <FormLabel>이메일</FormLabel>
+          <CustomInput
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleEmailChange}
+            autoComplete="email"
+            required
+          />
+        </FormControl>
         <FormControl mt={10}>
           <FormLabel>내용 / 문의사항</FormLabel>
           <Textarea value={inquiry} name="inquiry" onChange={handleInquiryChange} resize={'none'} sx={{ border: 'none', backgroundColor: 'rgb(248, 249, 250)'}} />
@@ -78,7 +93,7 @@ export default function InquiryForm() {
         * 담당자가 문의내용 확인 후 문자로 답변 드리겠습니다. 
         </Box>
         <Box
-          mt={60}
+          mt={8}
           width={'100%'}
         >
           <Button type='submit' sx={{

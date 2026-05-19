@@ -26,6 +26,7 @@ export default function InquiryFormMobile() {
 
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
+  const [email, setEmail] = useState('');
   const [inquiry, setInquiry] = useState('');
 
   const handleNameChange = (event) => {
@@ -37,6 +38,10 @@ export default function InquiryFormMobile() {
     const formattedInput = value.replace(/[^0-9]/g, '').slice(0, 11);
     const formattedNumber = formattedInput.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
     setContact(formattedNumber);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
   const handleInquiryChange = (event) => {
@@ -75,6 +80,18 @@ export default function InquiryFormMobile() {
         <FormControl mt={10} isRequired>
           <CustomLabel>연락처</CustomLabel>
           <CustomInput value={contact} name="contact" onChange={handleContactChange} />
+        </FormControl>
+
+        <FormControl mt={10} isRequired>
+          <CustomLabel>이메일</CustomLabel>
+          <CustomInput
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleEmailChange}
+            autoComplete="email"
+            required
+          />
         </FormControl>
         <FormControl mt={10}>
           <CustomLabel>내용 / 문의사항</CustomLabel>
